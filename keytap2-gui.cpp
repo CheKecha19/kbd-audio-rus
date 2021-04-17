@@ -1540,7 +1540,7 @@ int main(int argc, char ** argv) {
                 ImGui::Text("%s", text);
             }
             {
-                const char * text = "source code : https://github.com/ggerganov/kbd-audio";
+                const char * text = "source code : https://github.com/CheKecha19/kbd";
                 ImGui::Text("%s", "");
                 ImGui::SameLine(0.5f*ImGui::GetContentRegionAvailWidth() - 0.45f*ImGui::CalcTextSize(text).x);
                 ImGui::Text("%s", text);
