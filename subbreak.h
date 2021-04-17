@@ -382,11 +382,11 @@ bool decrypt(const TFreqMap & freqMap, const std::string & enc, std::string & re
         auto iterp = calcScore(freqMap, cure);
         auto cura = itera;
         for (int i = 0; i < 100; ++i) {
-            int a0 = rand()%26 + 1;
-            int a1 = rand()%26 + 1;
+            int a0 = rand()%32 + 1;
+            int a1 = rand()%32 + 1;
             while (a0 == a1) {
-                a0 = rand()%26 + 1;
-                a1 = rand()%26 + 1;
+                a0 = rand()%32 + 1;
+                a1 = rand()%32 + 1;
             }
 
             if (hint.size() > 0 && (hint[a0] != -1 || hint[a1] != -1)) {
@@ -475,11 +475,11 @@ bool guessSpaces(const TFreqMap & freqMap, const std::string & enc, std::string 
         auto iterp = calcScoreForSpaces(freqMap, cure);
         auto cura = itera;
         for (int i = 0; i < 100; ++i) {
-            int a0 = rand()%26 + 1;
-            int a1 = rand()%26 + 1;
+            int a0 = rand()%32 + 1;
+            int a1 = rand()%32 + 1;
             while (a0 == a1) {
-                a0 = rand()%26 + 1;
-                a1 = rand()%26 + 1;
+                a0 = rand()%32 + 1;
+                a1 = rand()%32 + 1;
             }
 
             if (hint.size() > 0 && (hint[a0] != -1 || hint[a1] != -1)) {
