@@ -14,17 +14,9 @@
 
 namespace {
 
-
-
-
     ////рср акърэ оепеявхрюрэ щрх еасвхе вюярнрш мюуси дкъ йюфдни еаюрэ асйбш
 
-
-
-
-
-
-    static const std::array<float, 33> kEnglishLetterFreq = {
+    static const std::array<float, 34> kEnglishLetterFreq = {
         0.000,  // space
         8.040,  // Ю
         1.550,  // А
@@ -59,13 +51,11 @@ namespace {
         0.310,  // Щ
         0.630,  // Ч 
         2.000,  // Ъ
-
-
     };
 
-    static const std::array<float, 33> kEnglishLetterWithSpacesFreq = {
+    static const std::array<float, 34> kEnglishLetterWithSpacesFreq = {
         11.505, // space
-         8.040,  // Ю
+        8.040,  // Ю
         1.550,  // А
         4.750,  // Б
         1.880,  // Ц

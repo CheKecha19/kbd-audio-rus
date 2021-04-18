@@ -1341,10 +1341,10 @@ int main(int argc, char ** argv) {
     if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_quadgrams.txt").c_str(), freqMap4) == false) {
         return -5;
     }
+
     stateCore.freqMap[0] = &freqMap2;
     stateCore.freqMap[1] = &freqMap3;
     stateCore.freqMap[2] = &freqMap4;
-    
 
     Gui::Objects guiObjects;
     if (Gui::init("Keytap2", g_windowSizeX, g_windowSizeY, guiObjects) == false) {
