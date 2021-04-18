@@ -1332,7 +1332,7 @@ int main(int argc, char ** argv) {
     Cipher::TFreqMap freqMap3;
     Cipher::TFreqMap freqMap4;   
        
-    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_quintgrams.txt").c_str(), freqMap2) == false) {
+    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_bigrams.txt").c_str(), freqMap2) == false) {
         return -5;
     }
     if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_trigrams.txt").c_str(), freqMap3) == false) {
