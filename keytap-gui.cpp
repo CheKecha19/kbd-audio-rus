@@ -37,7 +37,7 @@
 
 // виртуальная клавиатура, отображаемая в гуишке
 
-/*
+
 static const std::vector<float> kRowOffset = { 0.0f, 1.5f, 1.8f, 2.1f, 5.5f };
 static const std::vector<std::vector<int>> kKeyboard = {
     { 'ё', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 127},
@@ -46,7 +46,8 @@ static const std::vector<std::vector<int>> kKeyboard = {
     { 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '.', },
     { ' ', },
 };
-*/
+
+/*
 
 static const std::vector<float> kRowOffset = { 0.0f, 1.5f, 1.8f, 2.1f, 5.5f };
 static const std::vector<std::vector<int>> kKeyboard = {
@@ -56,7 +57,7 @@ static const std::vector<std::vector<int>> kKeyboard = {
     { 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', },
     { ' ', },
 };
-
+*/
 // types
 
 struct TrainStats {
