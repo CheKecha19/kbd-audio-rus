@@ -1328,22 +1328,23 @@ int main(int argc, char ** argv) {
         stateUI.maxSample = calcAbsMax(stateUI.waveformOriginal);
     }
 
+    Cipher::TFreqMap freqMap2;
     Cipher::TFreqMap freqMap3;
-    Cipher::TFreqMap freqMap4;
-    Cipher::TFreqMap freqMap5;
-
-    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./english_trigrams.txt").c_str(), freqMap3) == false) {
+    Cipher::TFreqMap freqMap4;   
+       
+    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_quintgrams.txt").c_str(), freqMap2) == false) {
         return -5;
     }
-    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./english_quadgrams.txt").c_str(), freqMap4) == false) {
+    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_trigrams.txt").c_str(), freqMap3) == false) {
         return -5;
     }
-    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./english_quintgrams.txt").c_str(), freqMap5) == false) {
+    if (Cipher::loadFreqMap((std::string(argv[2]) + "/./russian_quadgrams.txt").c_str(), freqMap4) == false) {
         return -5;
     }
-    stateCore.freqMap[0] = &freqMap3;
-    stateCore.freqMap[1] = &freqMap4;
-    stateCore.freqMap[2] = &freqMap5;
+    stateCore.freqMap[0] = &freqMap2;
+    stateCore.freqMap[1] = &freqMap3;
+    stateCore.freqMap[2] = &freqMap4;
+    
 
     Gui::Objects guiObjects;
     if (Gui::init("Keytap2", g_windowSizeX, g_windowSizeY, guiObjects) == false) {
